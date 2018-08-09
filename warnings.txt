@@ -1,0 +1,24 @@
+Z:\Labview_ALMA\MIX99\__sub_vi\__SIS_Mag_C_Set.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_set_c_curr.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_set_c_curr.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\__SIS_Mag_Get.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_read_vi.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_read_vi.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\__SISbias_Get.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_read_vi.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_read_vi.vi」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__34401A_read_volt.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__34401A_read_volt.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\__SISBias_init.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_init.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_init.vi」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__34401A_init.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__34401A_init.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\__SISbias_Set.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_set_c_curr.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_set_c_curr.vi」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__2400_set_c_volt.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__2400_set_c_volt.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\__Temp_Get.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__read_temp_1ch.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__read_temp_1ch.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\__sub_vi\_LoPower_opt_fx.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__PW_1ch.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__PW_1ch.vi」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__READ_PM_1ch_E4419A_aveg.VI」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__READ_PM_1ch_E4419A_aveg.VI」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__SISbias_Get.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__SISbias_Get.vi」からロードされました。
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__move_motor2.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__move_motor2.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\_LO_freq_Sweep.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\B10Lab_bias\__34401A_read_volt.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\__34401A_read_volt.vi」からロードされました。
+Z:\Labview_ALMA\MIX99\_LO_P_OPT2.vi
+    - 「VI」は「Z:\Labview_ALMA\MIX99\__sub_vi\LO_power\_LoPower_opt_fx.vi」にあるべきですが、「Z:\Labview_ALMA\MIX99\__sub_vi\_LoPower_opt_fx.vi」からロードされました。

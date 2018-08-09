@@ -1,0 +1,15 @@
+1@@@commentfromlog
+1@@@calc_IF_output.txt,dummy
+1@@@
+401@@@DSB_temp.xls
+407@@@-4140
+31@@@__pai_dsblog_post.txt,dummy
+31@@@_cart_3d_post.txt,dummy
+407@@@-4143
+1@@@
+404@@@word‚É’£‚è•t‚¯
+405@@@1,7,%SCRIPTPATH%
+405@@@18,2,%DATAPATH%
+405@@@18,3,%COM%%POL%.doc
+402@@@%COM%%POL%.xls
+4@@@

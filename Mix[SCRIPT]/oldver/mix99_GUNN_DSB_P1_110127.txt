@@ -1,0 +1,13 @@
+1@@@Mix99 test script
+1@@@auto measurement By WCA LO 1Pol
+16@@@
+130@@@0
+15@@@モータ位置確認
+1@@@LOあり
+17@@@ファイル名に付加するコメント入力
+13@@@-9999
+21@@@
+1@@@
+2@@@794,938,16
+31@@@GUNN_Tmin_LO_IV_SP_YIG_mes.txt,dummy
+3@@@

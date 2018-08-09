@@ -1,0 +1,130 @@
+コマンドマニュアル
+共通
+band (1-10)　受信機バンド番号
+pol (0,1) 偏波番号
+sb(1,2) ミクサ（IFアンプ）のサイド番号
+
+
+◇◇◇システム関連◇◇◇
+ 
+●CAN接続（band受信機を指定）　
+CAN_OPEN band
+
+●CAN接続終了
+CAN_CLOSE
+
+●（この）HELP表示
+HELP
+
+◎改訂履歴
+REV
+
+●TCP接続終了
+EXIT
+
+◇◇◇SISミクサ関連◇◇◇
+
+●ミクサにvolt(mV)の電圧を設定する
+SET_SIS_V pol sb volt
+
+●ミクサの電圧電流読み取り
+GET_SIS_VC pol sb
+出力：volt(mV),current(uA)
+
+◎すべてのミクサの電圧電流読み取り
+GET_SIS_VC_ALL
+出力：
+V＿P0S1,C_P0S1
+V＿P0S2,C_P0S2
+V＿P1S1,C_P1S1
+V＿P1S2,C_P1S2
+
+●ミクサの設定モード（mode= 0:CLOSE LOOP 1:OPEN LOOP）
+SET_SIS_MODE mode
+ミクサバイアスはこのコマンド実行時に設定しません。これを設定した以降すべてのSIS電圧設定時に適用されます。使用は計画的に。
+
+●ミクサの設定モード読み取り（mode= 0:CLOSE LOOP 1:OPEN LOOP）
+GET_SIS_MODE
+
+●ミクサのI-Vスイープ
+MEAS_SIS_IV_SWEEP pol sb start stop step
+出力：v,iの連続データ
+
+
+
+◇◇◇CLNA関連◇◇◇
+
+●CLNAにVD=vd#(V),ID=id#(mA)のバイアス設定
+SET_CLNA pol sb vd1 id1 vd2 id2 vg3 id3
+
+●CLNAのバイアス読み取り
+GET_CLNA pol sb
+出力：vd1(V),id1(mA),vg1(V),vd2(V),id2(mA)vg2(V),vd3(V),id3(mA)vg3(V),ENABLED(1) or DISABLED(0)
+
+●CLNAの電源OFF
+SET_CLNA_OFF pol sb
+
+◎すべてのCLNAのバイアス読み取り
+GET_CLNA_ALL 
+出力：
+P0S1:vd1(V),id1(mA),vg1(V),vd2(V),id2(mA)vg2(V),vd3(V),id3(mA)vg3(V),ENABLED(1) or DISABLED(0)
+P0S2:vd1(V),id1(mA),vg1(V),vd2(V),id2(mA)vg2(V),vd3(V),id3(mA)vg3(V),ENABLED(1) or DISABLED(0)
+P1S1:vd1(V),id1(mA),vg1(V),vd2(V),id2(mA)vg2(V),vd3(V),id3(mA)vg3(V),ENABLED(1) or DISABLED(0)
+P1S2:vd1(V),id1(mA),vg1(V),vd2(V),id2(mA)vg2(V),vd3(V),id3(mA)vg3(V),ENABLED(1) or DISABLED(0)
+
+
+
+◇◇◇超伝導コイル関連◇◇◇
+
+●超伝導コイル　current(mA)設定
+SET_MAG_C pol sb current
+
+●超伝導コイル電圧電流読み取り
+GET_MAG_VC pol sb(範囲確認)
+出力：volt(V),current(mA)
+
+●超伝導コイル　消磁（demag,deflux）
+ACT_DEMAG pol sb start step time
+start(mA)からstep(mA)毎にtime(ms)で0mAになるまでＤｅｍａｇを行う。
+実行時設定電流は以下の通り、
++start, 0, -start, 0,
++(start-step), 0,-(start-step)
+, , , 
+0
+
+
+
+◇◇◇WCA-LO関連◇◇◇
+
+●LO PAMPのvd(V)設定（pol=0:PA-A 1:PA-B）
+SET_PA_VD pol vd(範囲確認)
+
+●LO PAMPのvg(V)設定（pol=0:PA-A 1:PA-B）
+SET_PA_VG pol vg(範囲確認)
+
+●LO PAMPのvd(V),vg(V)読み取り（pol=0:PA-A 1:PA-B）
+GET_PA pol
+出力：vd(V),id(mA),vg(V)
+
+●WCA_LOの電源等パラメータ読み取り
+GET_WCA_LO 
+出力：
+PAA VD,PAA ID,PAA Vg,
+PAB VD,PAB ID,PAB Vg,
+PA -3V,PA+5V,
+PLL_ASSY_T,PLL_REF_TOT_P,PLL_IF_TOT_P,PLL_CORR_V,PLL_LOCK_V,PLL_5V,
+AMCA VD,AMCA ID,AMCA Vg,
+AMCB VD,AMCB ID,AMCB Vg,
+AMCE VD,AMCE ID,AMCE Vg,
+AMC_3V,AMC_5V,AMC_multi
+
+
+
+◇◇◇Tempモニタ関連◇◇◇
+
+◎温度センサ読み取り
+GET_TEMP pol
+出力：4KTMP,110KTMP(15KTMP),MXRTMP
+
+
+（◎今回追加したコマンド）

@@ -1,0 +1,7 @@
+103@@@0
+145@@@5,1
+31@@@_setmixparam_IV_SP_YIG_mes.txt,dummy
+103@@@1
+145@@@5,2
+31@@@_setmixparam_IV_SP_YIG_mes.txt,dummy
+1@@@
